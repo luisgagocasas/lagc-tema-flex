@@ -1,0 +1,22 @@
+{
+  "name": "portada2015",
+  "version": "0.0.1",
+  "description": "Portada 2015",
+  "main": "Gruntfile.js",
+  "author": "Luis Gago Casas",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-jade": "*",
+    "grunt-contrib-stylus": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-jade-php": "*",
+    "grunt-notify": "*",
+    "load-grunt-tasks": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@gitlab.com:plataformaeducativa/portada-2015.git"
+  }
+}

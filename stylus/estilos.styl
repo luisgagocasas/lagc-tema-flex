@@ -102,13 +102,33 @@ li
 	list-style none
 h1
 	padding: 10px 0px 0px 0px
+//Estructura
 .wrapper
-	margin 0 auto
-.cuerpo
-	margin 75px 0 0 0
+	flexbox()
+	flex-flow: row wrap
+.wrapper > *
+	padding: 10px
+	flex: 1 100%
+.header,.footer
+	flexbox()
+.header
+	background: tomato
+.footer
+	background: lightgreen
+.main
+	background: deepskyblue
+.aside-1
+	background: gold
+.aside-2
+	background: hotpink
 //Comunes
 .center
 	text-align center
+.left
+	text-align left
+.right
+	text-align right
+.xx-large
 .relative
 	position relative
 	padding-right 0px !important
@@ -116,4 +136,58 @@ h1
 	padding 0
 .puntero
 	cursor pointer
-//Nuevas clases
+//Header
+.header-logo
+	flex 2
+.header-centro
+	flex 3
+.header-redes
+	flex 2
+.header-icon
+	font-size: xx-large
+	margin: 20px 5px 0 5px
+	vertical-align: middle
+	display: inline-block
+	color white
+.logotipo
+	width 160px
+#entrar
+	margin: 10px 5px 0px 5px
+	display: inline-block
+	vertical-align: middle
+	border-bottom: 3px dotted white
+	line-height: 20px
+	color: white
+#login
+	background-color: white
+	width: 230px
+	height: 160px
+	position: absolute
+	border-radius: 5px
+	box-shadow: -5px 5px 5px 0px rgba(0, 0, 0, 0.4)
+	right: 70px
+	&:before
+		content: ""
+		display: block
+		width: 0
+		height: 0
+		border-left: 10px solid transparent
+		border-right: 10px solid transparent
+		border-bottom: 10px solid #fff
+		margin: -10px 10px 0px 0px
+		float: right
+//Foter
+.footer-izquierda
+	flex 1
+.footer-centro
+	flex 2
+.footer-derecha
+	flex 1
+//Main
+.slider
+	width: 95%
+	height: 300px
+	background beige
+	margin: 0 auto
+
+@import 'media'

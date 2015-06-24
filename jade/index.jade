@@ -4,8 +4,38 @@ html(lang="es")
 		meta(charset="UTF-8")
 		title Portada Plataforma Educativa
 		link(rel="shortcut icon" href="img/favicon.ico")
-		link(rel="stylesheet", href="css/index.css")
+		link(href="https://fontastic.s3.amazonaws.com/AEn6rjUj6AnGuW2HW2DKCe/icons.css", rel="stylesheet")
+		link(href="css/index.css", rel="stylesheet")
 	body
 		.wrapper
-			h1 Portada
+			header.header
+				.header-logo.center
+					img(src="img/plataforma.png", alt="Plataforma Educativa", class="logotipo")
+				.header-centro &nbsp;
+				.header-redes.center
+					span.icon-facebook.header-icon
+					span.icon-google.header-icon
+					span.icon-pinterest.header-icon
+					span.icon-twitter.header-icon
+					span.icon-youtube.header-icon
+					a(href="#" id="entrar") Entrar
+					#login
+						form(action="")
+							label(for="usuario") Usuario
+								input(type="text", name="usuario", id="usuario")
+							label(for="contrasenia") Contraseña
+								input(type="password", name="contrasenia", id="contrasenia")
+			article.main
+				.slider
+			aside.aside.aside-1 &nbsp;
+			footer.footer
+				.footer-izquierda
+					| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci excepturi possimus, rem neque unde, culpa. Fuga architecto, mollitia inventore obcaecati porro iusto nesciunt aperiam vitae, neque sit facere numquam corporis!
+				.footer-centro
+					| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci excepturi possimus, rem neque unde, culpa. Fuga architecto, mollitia inventore obcaecati porro iusto nesciunt aperiam vitae, neque sit facere numquam corporis!
+				.footer-derecha
+					| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci excepturi possimus, rem neque unde, culpa. Fuga architecto, mollitia inventore obcaecati porro iusto nesciunt aperiam vitae, neque sit facere numquam corporis!
+
 	script(src="js/index.js")
+	script(src="http://172.21.1.11:35729/livereload.js?snipver=1")
+html

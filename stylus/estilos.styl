@@ -83,7 +83,7 @@ user-select()
 	-ms-user-select arguments
 	user-select arguments
 body
-	background #FFFFFF
+	background #3A74B5
 	color #515151
 	font-family: 'Montserrat', sans-serif
 	font-size 16px
@@ -106,21 +106,22 @@ h1
 .wrapper
 	flexbox()
 	flex-flow: row wrap
+	width: 90%
+	margin: 0 auto
+	background white
 .wrapper > *
 	padding: 10px
 	flex: 1 100%
 .header,.footer
 	flexbox()
 .header
-	background: tomato
+	background: rgb(207, 207, 163)
 .footer
-	background: lightgreen
+	background rgb(207, 207, 163)
 .main
-	background: deepskyblue
+	//background: deepskyblue
 .aside-1
-	background: gold
-.aside-2
-	background: hotpink
+	background pink
 //Comunes
 .center
 	text-align center
@@ -165,7 +166,8 @@ h1
 	position: absolute
 	border-radius: 5px
 	box-shadow: -5px 5px 5px 0px rgba(0, 0, 0, 0.4)
-	right: 70px
+	right: 120px
+	display none
 	&:before
 		content: ""
 		display: block
@@ -177,6 +179,9 @@ h1
 		margin: -10px 10px 0px 0px
 		float: right
 //Foter
+footer
+	div
+		padding 10px
 .footer-izquierda
 	flex 1
 .footer-centro

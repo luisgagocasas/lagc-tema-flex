@@ -2,6 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Portada Plataforma Educativa</title>
     <link rel="shortcut icon" href="img/favicon.ico">
     <link href="https://fontastic.s3.amazonaws.com/AEn6rjUj6AnGuW2HW2DKCe/icons.css" rel="stylesheet">
@@ -10,25 +11,70 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="header-logo center"><img src="img/plataforma.png" alt="Plataforma Educativa" class="logotipo"></div>
-        <div class="header-centro">&nbsp;</div>
-        <div class="header-redes center"><span class="icon-facebook header-icon"></span><span class="icon-google header-icon"></span><span class="icon-pinterest header-icon"></span><span class="icon-twitter header-icon"></span><span class="icon-youtube header-icon"></span><a href="#" id="entrar">Entrar</a>
-          <div id="login">
-            <form action="">
-              <label for="usuario">Usuario
-                <input type="text" name="usuario" id="usuario">
-              </label>
-              <label for="contrasenia">Contraseña
-                <input type="password" name="contrasenia" id="contrasenia">
-              </label>
-            </form>
-          </div>
+        <div class="header-izquierda center"><img src="img/plataforma.png" alt="Plataforma Educativa" class="logotipo"></div>
+        <div class="header-centro">
+          <nav class="menuprincipal center">
+            <ul>
+              <li><a href="#">Quienes Somos</a><a href="#">Nuestros Cursos</a><a href="#">Modelo Educativo</a><a href="#">Contacto</a></li>
+            </ul>
+          </nav>
+          <!--span.icon-facebook.header-icon-->
+          <!--span.icon-google.header-icon-->
+          <!--span.icon-pinterest.header-icon-->
+          <!--span.icon-twitter.header-icon-->
+          <!--span.icon-youtube.header-icon-->
+          <!--a(href="#" id="entrar") Entrar-->
+          <!--#login
+          <form action="">
+            <label for="usuario">Usuario
+              <input type="text" name="usuario" id="usuario">
+            </label>
+            <label for="contrasenia">Contraseña
+              <input type="password" name="contrasenia" id="contrasenia">
+            </label>
+          </form>
+          -->
         </div>
+        <div class="header-derecha center"><a href="#" id="navicon" class="icon-navicon"></a></div>
       </header>
       <article class="main">
-        <div class="slider center">SLIDER</div>
+        <div id="slider">
+          <figure><img src="http://lorempixel.com/1000/600/abstract/"><img src="http://lorempixel.com/1000/600/animals/"><img src="http://lorempixel.com/1000/600/business/"><img src="http://lorempixel.com/1000/600/cats/"><img src="http://lorempixel.com/1000/600/city/"></figure>
+        </div>
       </article>
-      <aside class="aside aside-1 center">ASIDE</aside>
+      <aside class="aside aside-1">
+        <div class="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ex, nobis iste atque blanditiis sequi neque est quidem, perspiciatis deserunt dolor minus eum nesciunt sed molestiae magnam fugiat aperiam odit tempora, nulla facere quisquam dolore natus. Ea doloribus, cumque, rerum vel cum voluptate, accusantium aspernatur sit dolores magnam culpa ullam.</div>
+      </aside>
+      <section class="section">
+        <article class="noticia">
+          <figure><img src="img/noticia.jpg"></figure>
+          <div class="cont">
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, quo a eaque quae quidem doloremque maiores nobis, nisi fuga impedit!</p>
+          </div>
+        </article>
+        <article class="noticia">
+          <figure><img src="img/noticia.jpg"></figure>
+          <div class="cont">
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, quo a eaque quae quidem doloremque maiores nobis, nisi fuga impedit!</p>
+          </div>
+        </article>
+        <article class="noticia">
+          <figure><img src="img/noticia.jpg"></figure>
+          <div class="cont">
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, quo a eaque quae quidem doloremque maiores nobis, nisi fuga impedit!</p>
+          </div>
+        </article>
+        <article class="noticia">
+          <figure><img src="img/noticia.jpg"></figure>
+          <div class="cont">
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, quo a eaque quae quidem doloremque maiores nobis, nisi fuga impedit!</p>
+          </div>
+        </article>
+      </section>
       <footer class="footer">
         <div class="footer-izquierda">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
         <div class="footer-centro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci excepturi possimus, rem neque unde, culpa.</div>
@@ -37,6 +83,4 @@
     </div>
   </body>
   <script src="js/index.js"></script>
-  <script src="http://172.21.1.11:35729/livereload.js?snipver=1"></script>
 </html>
-<html></html>

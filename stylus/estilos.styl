@@ -112,10 +112,11 @@ h1
 .wrapper > *
 	padding: 10px
 	flex: 1 100%
-.header,.footer
+.header,.footer,.section
 	flexbox()
+	flex-flow: row wrap
 .header
-	background: rgb(207, 207, 163)
+	background: white
 .footer
 	background rgb(207, 207, 163)
 .main
@@ -129,7 +130,6 @@ h1
 	text-align left
 .right
 	text-align right
-.xx-large
 .relative
 	position relative
 	padding-right 0px !important
@@ -138,20 +138,36 @@ h1
 .puntero
 	cursor pointer
 //Header
-.header-logo
-	flex 2
+.header-izquierda
+	flex 1
 .header-centro
 	flex 3
-.header-redes
-	flex 2
-.header-icon
+.header-derecha
+	flex 1
+#navicon
 	font-size: xx-large
-	margin: 20px 5px 0 5px
-	vertical-align: middle
-	display: inline-block
-	color white
+	margin: 10px 0px 0px 0px
+	display: block
+	cursor pointer
 .logotipo
-	width 160px
+	width 110px
+	color black
+.menuprincipal
+	margin: 60px 3px 0px 0px
+	width: 100%
+	display none
+	ul
+		padding 0
+		li
+			a
+				padding 5px 0px 5px 0px
+				display block
+.efectomenu1
+	animated()
+	animatedbounceIn()
+.efectomenu2
+	animated()
+	animatedbounceOutUp()
 #entrar
 	margin: 10px 5px 0px 5px
 	display: inline-block
@@ -178,6 +194,40 @@ h1
 		border-bottom: 10px solid #fff
 		margin: -10px 10px 0px 0px
 		float: right
+//Main
+.main,.aside
+	padding 0
+#slider
+	overflow: hidden
+	figure
+		position: relative
+		width: 500%
+		margin: 0
+		left: 0
+		text-align: left
+		font-size: 0
+		animation: 30s slidy infinite
+		img
+			width: 20%
+			float: left
+//Section - Noticias
+.noticia
+	width 100%
+	padding 5px
+	overflow: hidden
+	box-sizing: border-box
+	flexbox()
+	flex-flow: row wrap
+	h2
+		font-size: 1em
+	figure,.cont
+		width 100%
+	figure
+		img
+			width 100%
+	.cont
+		padding 1%
+
 //Foter
 footer
 	div
@@ -188,11 +238,5 @@ footer
 	flex 2
 .footer-derecha
 	flex 1
-//Main
-.slider
-	width: 95%
-	height: 300px
-	background beige
-	margin: 0 auto
 
 @import 'media'

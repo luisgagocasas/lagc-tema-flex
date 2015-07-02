@@ -1,13 +1,16 @@
 $(document).ready(function(){ //cuando el DOM listo
-	$("#entrar").click(function(){
-		$("#login").show();
-	});
-	$("#entrar").toggle(
+	$("#navicon").toggle(
         function(e){ //Primer click
-            $("#login").show();
+            $(".menuprincipal").show();
+            $(".menuprincipal").addClass("efectomenu1");
+            $(".menuprincipal").removeClass("efectomenu2");
         },
         function(e){ //Segundo click
-            $("#login").hide();
+            $(".menuprincipal").removeClass("efectomenu1");
+            $(".menuprincipal").addClass("efectomenu2");
+            setTimeout(function(){
+                $(".menuprincipal").hide();
+            }, 400);
         }
     );
 });

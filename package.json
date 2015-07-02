@@ -1,18 +1,20 @@
 {
-  "name": "portada2015",
+  "name": "portada-2015",
   "version": "0.0.1",
-  "description": "Portada 2015",
+  "description": "Portada Plataforma 2015 - Propuesta",
   "main": "Gruntfile.js",
   "author": "Luis Gago Casas",
   "license": "MIT",
   "devDependencies": {
     "grunt": "*",
+    "grunt-browser-sync": "*",
     "grunt-contrib-jade": "*",
     "grunt-contrib-stylus": "*",
     "grunt-contrib-uglify": "*",
     "grunt-contrib-watch": "*",
     "grunt-jade-php": "*",
     "grunt-notify": "*",
+    "grunt-php": "*",
     "load-grunt-tasks": "*"
   },
   "repository": {

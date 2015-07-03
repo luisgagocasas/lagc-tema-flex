@@ -85,7 +85,7 @@ user-select()
 body
 	background #3A74B5
 	color #515151
-	font-family: 'Montserrat', sans-serif
+	font-family: 'Quicksand', sans-serif
 	font-size 16px
 *, *:after, *:before
     -moz-box-sizing border-box
@@ -117,6 +117,7 @@ h1
 	flex-flow: row wrap
 .header
 	background: white
+	padding: 5px 10px 0px 10px
 .footer
 	background rgb(207, 207, 163)
 .main
@@ -141,33 +142,51 @@ h1
 .header-izquierda
 	flex 1
 .header-centro
-	flex 3
+	flex 2
 .header-derecha
-	flex 1
+	text-align: right
+	flex 2
 #navicon
 	font-size: xx-large
 	margin: 10px 0px 0px 0px
-	display: block
+	display: inline-block
+	vertical-align: middle
 	cursor pointer
 .logotipo
 	width 110px
+	transition: 0.2s
 	color black
 .menuprincipal
-	margin: 60px 3px 0px 0px
-	width: 100%
-	display none
+	width: 200%
+	margin: 55px 0px 0px -25%
+	transition: height .5s ease-out
+	height 0
 	ul
 		padding 0
 		li
 			a
 				padding 5px 0px 5px 0px
 				display block
+.acceder
+	background-color: #ff4842
+	border: none
+	border-radius: .4em
+	box-sizing: border-box
+	color: #fff
+	cursor: pointer
+	display: inline-block
+	font-size: .95em
+	font-weight: 700
+	padding: .6em .8em .8em
+	text-decoration: none
+	transition: .2s
+	vertical-align: middle
+	box-shadow: inset 0 -.2em rgba(0,0,0,.3)
+	&:hover
+		background-color #7dcd40
 .efectomenu1
-	animated()
-	animatedbounceIn()
-.efectomenu2
-	animated()
-	animatedbounceOutUp()
+	height 135px
+	display block
 #entrar
 	margin: 10px 5px 0px 5px
 	display: inline-block
@@ -210,6 +229,125 @@ h1
 		img
 			width: 20%
 			float: left
+.slider
+	width 100%
+	float left
+	height auto
+	//background-color #000
+	display inline-block
+
+	/*slider inicio*/
+	.banner
+		width 100%
+		height auto
+		display inline-table
+		background #FFFFFF
+		vertical-align top
+		overflow hidden
+
+		.rslides
+			position relative
+			list-style none
+			overflow hidden
+			width 100%
+			padding 0
+			margin 0
+
+			li
+				-webkit-backface-visibility hidden
+				position absolute
+				display none
+				width 100%
+				left 0
+				top 0
+
+			&:first-child
+				position relative
+				display block
+				float left
+
+			img
+				display block
+				height auto
+				float left
+				width 100%
+				border 0
+
+		.rslides_container
+			margin-bottom 0px
+			position relative
+			float left
+			width 100%
+
+		.centered-btns_nav
+			z-index 3
+			position absolute
+			-webkit-tap-highlight-color rgba(0,0,0,0)
+			top 50%
+			left 0
+			opacity 0
+			text-indent -9999px
+			overflow hidden
+			text-decoration none
+			height 61px
+			width 38px
+			background transparent url("../img/themes.gif") no-repeat left top
+			margin-top -45px
+
+			&:active
+				opacity 1.0
+
+			&.prev
+				border-radius 0px 15px 15px 0px
+
+			&.next
+				left auto
+				background-position right top
+				right 0
+				border-radius 15px 0px 0px 15px
+
+		.transparent-btns_nav
+			z-index 3
+			position absolute
+			-webkit-tap-highlight-color rgba(0,0,0,0)
+			top 0
+			left 0
+			display block
+			background #fff
+			opacity 0
+			width 48%
+			text-indent -9999px
+			overflow hidden
+			height 91%
+
+			&.next
+				left auto
+				right 0
+
+		.large-btns_nav
+			z-index 3
+			position absolute
+			-webkit-tap-highlight-color rgba(0,0,0,0)
+			opacity 0
+			text-indent -9999px
+			overflow hidden
+			top 0
+			bottom 0
+			left 0
+			background #000 url("../img/themes.gif") no-repeat left 50%
+			width 38px
+
+			&:active
+				opacity 1.0
+
+			&.next
+				left auto
+				background-position right 50%
+				right 0
+
+		&:hover
+			.centered-btns_nav, .large-btns_nav
+				opacity 0.5
 //Section - Noticias
 .noticia
 	width 100%

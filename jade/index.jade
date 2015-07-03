@@ -17,8 +17,11 @@ html(lang="es")
 						ul
 							li
 								a(href="#") Quienes Somos
+							li
 								a(href="#") Nuestros Cursos
+							li
 								a(href="#") Modelo Educativo
+							li
 								a(href="#") Contacto
 					//span.icon-facebook.header-icon
 					//span.icon-google.header-icon
@@ -32,10 +35,30 @@ html(lang="es")
 								input(type="text", name="usuario", id="usuario")
 							label(for="contrasenia") Contraseña
 								input(type="password", name="contrasenia", id="contrasenia")
-				.header-derecha.center
+				.header-derecha.ridth
+					a(href="#", class="acceder") Acceder
 					a(href="#", class="icon-navicon" id="navicon")
 			article.main
-				#slider
+				.slider
+					.banner
+						.rslides_container
+							ul(class="rslides", id="slider3")
+								li
+									a(href="#")
+										img(src="http://lorempixel.com/1000/500/abstract/")
+								li
+									a(href="#")
+										img(src="http://lorempixel.com/1000/500/animals/")
+								li
+									a(href="#")
+										img(src="http://lorempixel.com/1000/500/business/")
+								li
+									a(href="#")
+										img(src="http://lorempixel.com/1000/500/city/")
+								li
+									a(href="#")
+										img(src="http://lorempixel.com/1000/500/cats/")
+				//#slider
 					figure
 						img(src="http://lorempixel.com/1000/600/abstract/")
 						img(src="http://lorempixel.com/1000/600/animals/")
@@ -79,3 +102,4 @@ html(lang="es")
 					| Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 
 	script(src="js/index.js")
+	script(src="http://172.21.1.11:35729/livereload.js")

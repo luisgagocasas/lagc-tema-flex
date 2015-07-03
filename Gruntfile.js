@@ -1,49 +1,5 @@
 module.exports = function (grunt) {
     grunt.initConfig({
-        //Server PHP
-        php: {
-            dist: {
-                options: {
-                    hostname: 'localhost',
-                    port: 8000,
-                    base: 'www/', // Project root
-                    keepalive: false,
-                    open: false,
-                    directives: {
-                        'error_log': require('path').resolve('logs/error.log')
-                    }
-                }
-            }
-        },
-        //BrowserSync
-        browserSync: {
-            dist: {
-                bsFiles: {
-                    src: [
-                        'stylus/*.styl',
-                        'jade/*.jade',
-                        'javascript/*.js',
-                    ]
-                },
-                options: {
-                    proxy: '<%= php.dist.options.hostname %>:<%= php.dist.options.port %>',
-                    watchTask: true,
-                    notify: false,
-                    open: true,
-                    //startPath: '',
-                    //reloadDelay: 2000,
-                    //injectChanges: true,
-                    reloadOnRestart: true,
-                    logLevel: 'silent',
-                    ghostMode: {
-                        clicks: true,
-                        scroll: true,
-                        links: true,
-                        forms: true
-                    }
-                }
-            }
-        },
         //Preprocesador css
         stylus: {
             compile: {
@@ -111,7 +67,7 @@ module.exports = function (grunt) {
         watch: {
             options: {
                 nospawn: false,
-                /*livereload: true*/
+                livereload: true
             },
             //observar de stylus
             stylesheets: {
@@ -134,6 +90,6 @@ module.exports = function (grunt) {
     //Cargamos todos los tasks declarados en package.json
     require('load-grunt-tasks')(grunt);
     // Defino las tareas.
-    grunt.registerTask('default', ['stylus', 'uglify', 'jadephp', 'notify', 'browserSync:dist', 'php:dist', 'watch']);
+    grunt.registerTask('default', ['stylus', 'uglify', 'jadephp', 'notify', 'watch']);
     //grunt.registerTask('default', ['stylus','uglify', 'notify','watch']);
 };

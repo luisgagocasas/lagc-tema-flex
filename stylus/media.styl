@@ -1,4 +1,44 @@
-@media all and (min-width: 800px)
+//800
+@media all and (min-width: 1000px)
+	//header
+	.header-izquierda
+		flex 1
+	.header-centro
+		flex 4
+	.header-derecha
+		flex 1
+		text-align: center
+	.logotipo
+		width 160px
+	.menuprincipal
+		width 100%
+		margin 0
+		height: auto
+		ul
+			li
+				display inline-block
+				//border-right: 2px solid #ECECEC
+				a
+					margin -5px 0px 0px 0px
+					border-top: 5px solid transparent
+					transition: 0.2s
+					position relative
+					padding 25px 10px 10px 10px
+					&:hover
+						border-top: 5px solid #ff4842
+				&:nth-child(-n+3) //Los 3 primeros
+					a
+						&:before
+							height: 1.5em
+							border-right: 1px solid #ECECEC
+							content: ''
+							position: absolute
+							top: 25px
+							right: 0
+	#navicon
+		display none
+	.acceder
+		margin: 17px 0px 0px 0px
 	.main
 		flex 3
 		order 1

@@ -13,7 +13,7 @@ $(document).ready(function(){ //cuando el DOM listo
             }, 400);*/
         }
     );
-    $("#slider3").responsiveSlides({
+    $("#slider1").responsiveSlides({
         auto: true,
         pager: false,
         nav: true,

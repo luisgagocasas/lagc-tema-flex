@@ -109,6 +109,7 @@ h1
 	width: 90%
 	margin: 0 auto
 	background white
+	box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5)
 .wrapper > *
 	padding: 10px
 	flex: 1 100%
@@ -119,11 +120,13 @@ h1
 	background: white
 	padding: 5px 10px 0px 10px
 .footer
-	background rgb(207, 207, 163)
+	background: #323131
+	color: #A8A8A8
 .main
 	//background: deepskyblue
 .aside-1
-	background pink
+	background #323131
+	color white
 //Comunes
 .center
 	text-align center
@@ -184,9 +187,17 @@ h1
 	box-shadow: inset 0 -.2em rgba(0,0,0,.3)
 	&:hover
 		background-color #7dcd40
-.efectomenu1
+.efecto1
 	height 135px
 	display block
+.efecto2
+	display block !important
+	animated()
+	animatedbounceIn()
+.efecto3
+	display block !important
+	animated()
+	animatedbounceOutUp()
 #entrar
 	margin: 10px 5px 0px 5px
 	display: inline-block
@@ -197,12 +208,15 @@ h1
 #login
 	background-color: white
 	width: 230px
-	height: 160px
+	//height: 160px
 	position: absolute
 	border-radius: 5px
-	box-shadow: -5px 5px 5px 0px rgba(0, 0, 0, 0.4)
+	box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5)
 	right: 120px
+	z-index 5
+	padding: 10px
 	display none
+	//display none
 	&:before
 		content: ""
 		display: block
@@ -211,8 +225,36 @@ h1
 		border-left: 10px solid transparent
 		border-right: 10px solid transparent
 		border-bottom: 10px solid #fff
-		margin: -10px 10px 0px 0px
+		margin: -20px 10px 0px 0px
 		float: right
+	label
+		float: left
+		text-align: left
+		margin: 10px
+	input
+		padding: 10px
+		width: 100%
+		outline: none
+		border: 1px solid #E2E2E2
+		font-size: 16px
+		color: #333
+		box-sizing: border-box
+	button
+		background  #7dcd40
+		border: none
+		border-radius: .4em
+		box-sizing: border-box
+		color: #fff
+		cursor: pointer
+		font-size: .95em
+		font-weight: 700
+		padding: .6em .8em .8em
+		text-decoration: none
+		transition: .2s
+		vertical-align: middle
+		box-shadow: inset 0 -.2em rgba(0,0,0,.3)
+		&:hover
+			background  #ff4842
 //Main
 .main,.aside
 	padding 0
@@ -235,6 +277,17 @@ h1
 	height auto
 	//background-color #000
 	display inline-block
+	.caption
+		position: absolute
+		display: block
+		bottom: 0
+		left: 0
+		right: 0
+		padding: 15px
+		text-align: center
+		background: #000
+		background: rgba(0,0,0, .8)
+		color: #fff
 	.banner
 		width 100%
 		height auto
@@ -307,7 +360,6 @@ h1
 			text-indent -9999px
 			overflow hidden
 			height 91%
-
 			&.next
 				left auto
 				right 0
@@ -337,14 +389,19 @@ h1
 			.centered-btns_nav, .large-btns_nav
 				opacity 0.5
 //Section - Noticias
+.section
+	padding: 0px 40px 0px 40px
+	h2
+		width 100%
+		margin 20px
 .noticia
-	width 100%
+	width 50%
 	padding 5px
 	overflow: hidden
 	box-sizing: border-box
 	flexbox()
 	flex-flow: row wrap
-	h2
+	h3
 		font-size: 1em
 	figure,.cont
 		width 100%
@@ -358,11 +415,28 @@ h1
 footer
 	div
 		padding 10px
-.footer-izquierda
-	flex 1
-.footer-centro
-	flex 2
+		width 100%
+[class^="icon-"]
+	font-size xx-large
+	flexbox()
+	justify-content center
+	align-items center
+	margin 10px
+	//width 20%
 .footer-derecha
-	flex 1
+	flexbox()
+	//justify-content space-around
+	justify-content: center
+//iconos #2E4F82
+.icon-facebook
+	color #2E4F82
+.icon-twitter
+	color #2AA9E0
+.icon-google
+	color #B33F30
+.icon-pinterest
+	color #E71211
+.icon-youtube
+	color #C02C2F
 
 @import 'media'

@@ -1,4 +1,19 @@
-//800
+@media all and (max-width: 362px)
+	.wrapper
+		width 100%
+	.noticia
+		width 100%
+@media all and (min-width: 800px)
+	.footer-izquierda
+		flex 1
+	.footer-centro
+		flex 1
+	.footer-derecha
+		flex 1
+		.columna
+			justify-content space-between
+		.medio
+			align-self center
 @media all and (min-width: 1000px)
 	//header
 	.header-izquierda
@@ -47,8 +62,11 @@
 		order 2
 	.section
 		order 3
+		padding: 10px
 	.noticia
 		width 20%
 		flex 1
+	//Footer
 	.footer
+		padding 0
 		order 4

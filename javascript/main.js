@@ -1,16 +1,22 @@
 $(document).ready(function(){ //cuando el DOM listo
 	$("#navicon").toggle(
         function(e){ //Primer click
-            //$(".menuprincipal").show();
-            $(".menuprincipal").addClass("efectomenu1");
-            //$(".menuprincipal").removeClass("efectomenu2");
+            $(".menuprincipal").addClass("efecto1");
         },
         function(e){ //Segundo click
-            $(".menuprincipal").removeClass("efectomenu1");
-            /*$(".menuprincipal").addClass("efectomenu2");
+            $(".menuprincipal").removeClass("efecto1");
+        }
+    );
+    $("#acceder").toggle(
+        function(e){ //Primer click
+            $("#login").addClass("efecto2");
+        },
+        function(e){ //Segundo click
+            $("#login").addClass("efecto3");
             setTimeout(function(){
-                $(".menuprincipal").hide();
-            }, 400);*/
+                $("#login").removeClass("efecto2");
+                $("#login").removeClass("efecto3");
+            }, 500);
         }
     );
     $("#slider1").responsiveSlides({

@@ -23,21 +23,16 @@ html(lang="es")
 								a(href="#") Modelo Educativo
 							li
 								a(href="#") Contacto
-					//span.icon-facebook.header-icon
-					//span.icon-google.header-icon
-					//span.icon-pinterest.header-icon
-					//span.icon-twitter.header-icon
-					//span.icon-youtube.header-icon
-					//a(href="#" id="entrar") Entrar
-					//#login
+				.header-derecha.ridth
+					a(href="#", class="acceder" id="acceder") Acceder
+					a(href="#", class="icon-navicon" id="navicon")
+					#login.center
 						form(action="")
 							label(for="usuario") Usuario
 								input(type="text", name="usuario", id="usuario")
 							label(for="contrasenia") Contraseña
 								input(type="password", name="contrasenia", id="contrasenia")
-				.header-derecha.ridth
-					a(href="#", class="acceder") Acceder
-					a(href="#", class="icon-navicon" id="navicon")
+							button(type="submit", class="center") Entrar
 			article.main
 				.slider
 					.banner
@@ -45,61 +40,62 @@ html(lang="es")
 							ul(class="rslides", id="slider1")
 								li
 									a(href="#")
-										img(src="http://lorempixel.com/1000/500/abstract/")
+										img(src="http://lorempixel.com/1000/600/business/1/Plataforma Educativa/")
+										p.caption Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, quis.
 								li
 									a(href="#")
-										img(src="http://lorempixel.com/1000/500/animals/")
+										img(src="http://lorempixel.com/1000/600/business/2/Plataforma Educativa/", title="chau")
 								li
 									a(href="#")
-										img(src="http://lorempixel.com/1000/500/business/")
+										img(src="http://lorempixel.com/1000/600/business/3/Plataforma Educativa/")
 								li
 									a(href="#")
-										img(src="http://lorempixel.com/1000/500/city/")
+										img(src="http://lorempixel.com/1000/600/business/4/Plataforma Educativa/")
 								li
 									a(href="#")
-										img(src="http://lorempixel.com/1000/500/cats/")
-				//#slider
-					figure
-						img(src="http://lorempixel.com/1000/600/abstract/")
-						img(src="http://lorempixel.com/1000/600/animals/")
-						img(src="http://lorempixel.com/1000/600/business/")
-						img(src="http://lorempixel.com/1000/600/cats/")
-						img(src="http://lorempixel.com/1000/600/city/")
+										img(src="http://lorempixel.com/1000/600/business/5/Plataforma Educativa/")
 			aside.aside.aside-1
 				.center Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ex, nobis iste atque blanditiis sequi neque est quidem, perspiciatis deserunt dolor minus eum nesciunt sed molestiae magnam fugiat aperiam odit tempora, nulla facere quisquam dolore natus. Ea doloribus, cumque, rerum vel cum voluptate, accusantium aspernatur sit dolores magnam culpa ullam.
 			section.section
+				h2.center Noticias
 				article.noticia
 					figure
 						img(src="img/noticia.jpg")
 					.cont
-						h2 Lorem ipsum dolor sit amet
+						h3 Lorem ipsum dolor sit amet
 						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, quo a eaque quae quidem doloremque maiores nobis, nisi fuga impedit!
 
 				article.noticia
 					figure
 						img(src="img/noticia.jpg")
 					.cont
-						h2 Lorem ipsum dolor sit amet
+						h3 Lorem ipsum dolor sit amet
 						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, quo a eaque quae quidem doloremque maiores nobis, nisi fuga impedit!
 				article.noticia
 					figure
 						img(src="img/noticia.jpg")
 					.cont
-						h2 Lorem ipsum dolor sit amet
+						h3 Lorem ipsum dolor sit amet
 						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, quo a eaque quae quidem doloremque maiores nobis, nisi fuga impedit!
 				article.noticia
 					figure
 						img(src="img/noticia.jpg")
 					.cont
-						h2 Lorem ipsum dolor sit amet
+						h3 Lorem ipsum dolor sit amet
 						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, quo a eaque quae quidem doloremque maiores nobis, nisi fuga impedit!
 			footer.footer
-				.footer-izquierda
-					| Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-				.footer-centro
-					| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci excepturi possimus, rem neque unde, culpa.
+				.footer-izquierda.center
+					p Plataforma Educativa® Grupo JM
+					p La Merced 209 - 215, Arequipa, Arequipa - Perú
+				.footer-centro.center
+					p E - mail: plataforma@utpaqp.edu.pe
+					p Telf.: (54) 204528 Anexo 629
 				.footer-derecha
-					| Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					a(href="#" target="_blank" class="icon-facebook")
+					a(href="#" target="_blank" class="icon-google")
+					a(href="#" target="_blank" class="icon-pinterest medio")
+					a(href="#" target="_blank" class="icon-twitter")
+					a(href="#" target="_blank" class="icon-youtube")
 
 	script(src="js/index.js")
 	script(src="http://172.21.1.11:35729/livereload.js")

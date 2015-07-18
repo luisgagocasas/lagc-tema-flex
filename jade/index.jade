@@ -3,36 +3,27 @@ html(lang="es")
 	head
 		meta(charset="UTF-8")
 		meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
-		title Portada Plataforma Educativa
+		title Luis Gago Casas
 		link(rel="shortcut icon" href="img/favicon.ico")
 		link(href="https://fontastic.s3.amazonaws.com/AEn6rjUj6AnGuW2HW2DKCe/icons.css", rel="stylesheet")
 		link(href="css/index.css", rel="stylesheet")
 	body
 		.wrapper
 			header.header
-				.header-izquierda.center
-					img(src="img/plataforma.png", alt="Plataforma Educativa", class="logotipo")
-				.header-centro
+				.header-logo
+					| Luis Gago Casas
+				.header-menu
 					nav.menuprincipal.center
 						ul
 							li
-								a(href="#") Quienes Somos
+								a(href="#") Yo
 							li
-								a(href="#") Nuestros Cursos
+								a(href="#") Blog
 							li
-								a(href="#") Modelo Educativo
+								a(href="#") CV
 							li
 								a(href="#") Contacto
-				.header-derecha.ridth
-					a(href="#", class="acceder" id="acceder") Acceder
 					a(href="#", class="icon-navicon" id="navicon")
-					#login.center
-						form(action="")
-							label(for="usuario") Usuario
-								input(type="text", name="usuario", id="usuario")
-							label(for="contrasenia") Contraseña
-								input(type="password", name="contrasenia", id="contrasenia")
-							button(type="submit", class="center") Entrar
 			article.main
 				.slider
 					.banner
@@ -57,7 +48,6 @@ html(lang="es")
 			aside.aside.aside-1
 				.center Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ex, nobis iste atque blanditiis sequi neque est quidem, perspiciatis deserunt dolor minus eum nesciunt sed molestiae magnam fugiat aperiam odit tempora, nulla facere quisquam dolore natus. Ea doloribus, cumque, rerum vel cum voluptate, accusantium aspernatur sit dolores magnam culpa ullam.
 			section.section
-				h2.center Noticias
 				article.noticia
 					figure
 						img(src="img/noticia.jpg")
@@ -85,11 +75,9 @@ html(lang="es")
 						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, quo a eaque quae quidem doloremque maiores nobis, nisi fuga impedit!
 			footer.footer
 				.footer-izquierda.center
-					p Plataforma Educativa® Grupo JM
-					p La Merced 209 - 215, Arequipa, Arequipa - Perú
+					p Arequipa - Perú
 				.footer-centro.center
-					p E - mail: plataforma@utpaqp.edu.pe
-					p Telf.: (54) 204528 Anexo 629
+					p E - mail: luisgago@lagc-peru.com
 				.footer-derecha
 					a(href="#" target="_blank" class="icon-facebook")
 					a(href="#" target="_blank" class="icon-google")
@@ -98,4 +86,3 @@ html(lang="es")
 					a(href="#" target="_blank" class="icon-youtube")
 
 	script(src="js/index.js")
-	//script(src="http://172.21.1.11:35729/livereload.js")

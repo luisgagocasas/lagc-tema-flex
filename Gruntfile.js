@@ -61,8 +61,46 @@ module.exports = function (grunt) {
                 }
             }
         },
+        //Notificaciones
+        notify: {
+            uglify: {
+                options: {
+                    enabled: true,
+                    max_jshint_notifications: 1,
+                    message: "uglify iniciado!"
+                }
+            },
+            jadephp: {
+                options: {
+                    enabled: true,
+                    max_jshint_notifications: 1,
+                    message: "jade iniciado!"
+                }
+            },
+            stylus: {
+                options: {
+                    enabled: true,
+                    max_jshint_notifications: 1,
+                    message: "stylus iniciado!"
+                }
+            },
+        },
+        //Server PHP
+        php: {
+            dist: {
+                options: {
+                    hostname: 'localhost',
+                    port: 8000,
+                    base: 'www', // Project root
+                    keepalive: false,
+                    open: false,
+                    directives: {
+                        'error_log': require('path').resolve('logs/error.log')
+                    }
+                }
+            }
+        },
         //BrowserSync
-        /* Activar el Live Reload en el navegador y funcionara */
         browserSync: {
             dev: {
                 bsFiles: {
@@ -73,13 +111,15 @@ module.exports = function (grunt) {
                     ]
                 },
                 options: {
+                    proxy: '<%= php.dist.options.hostname %>:<%= php.dist.options.port %>',
                     watchTask: true,
-                    server: './www',
                     notify: false,
-                    //startPath: '',
-                    //reloadDelay: 2000,
-                    //injectChanges: true,
+                    open: true,
+                    startPath: '',
+                    reloadDelay: 2000,
+                    injectChanges: true,
                     reloadOnRestart: true,
+                    logLevel: 'silent',
                     ghostMode: {
                         clicks: true,
                         scroll: true,
@@ -94,6 +134,6 @@ module.exports = function (grunt) {
     //Cargamos todos los tasks declarados en package.json
     require('load-grunt-tasks')(grunt);
     // Defino las tareas.
-    grunt.registerTask('default', ['stylus', 'uglify', 'jadephp', 'browserSync', 'watch']);
-    //grunt.registerTask('default', ['stylus','uglify', 'notify','watch']);
+    grunt.registerTask('default', ['stylus', 'uglify', 'jadephp', 'notify', 'php:dist', 'browserSync', 'watch']);
+    //grunt.registerTask('default', ['stylus', 'uglify', 'jadephp', 'notify', 'browserSync:dist', 'php:dist', 'watch']);
 };

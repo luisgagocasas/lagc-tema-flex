@@ -1,7 +1,7 @@
 {
-  "name": "portada-2015",
+  "name": "lagc-tema-flex",
   "version": "0.0.1",
-  "description": "Portada Plataforma 2015 - Propuesta",
+  "description": "Sitio web Luis Gago casas - tema",
   "main": "Gruntfile.js",
   "author": "Luis Gago Casas",
   "license": "MIT",

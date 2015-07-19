@@ -111,15 +111,12 @@ module.exports = function (grunt) {
                     ]
                 },
                 options: {
-                    proxy: '<%= php.dist.options.hostname %>:<%= php.dist.options.port %>',
                     watchTask: true,
                     notify: false,
                     open: true,
-                    startPath: '',
-                    reloadDelay: 2000,
-                    injectChanges: true,
-                    reloadOnRestart: true,
-                    logLevel: 'silent',
+                    server: {
+                        baseDir: "www"
+                    },
                     ghostMode: {
                         clicks: true,
                         scroll: true,
@@ -134,6 +131,6 @@ module.exports = function (grunt) {
     //Cargamos todos los tasks declarados en package.json
     require('load-grunt-tasks')(grunt);
     // Defino las tareas.
-    grunt.registerTask('default', ['stylus', 'uglify', 'jadephp', 'notify', 'php:dist', 'browserSync', 'watch']);
-    //grunt.registerTask('default', ['stylus', 'uglify', 'jadephp', 'notify', 'browserSync:dist', 'php:dist', 'watch']);
+    grunt.registerTask('default', ['stylus', 'uglify', 'jadephp', 'notify', 'browserSync', 'watch']);
+    //grunt.registerTask('default', ['stylus', 'uglify', 'jadephp', 'notify', 'php:dist', 'browserSync', 'watch']);
 };

@@ -106,7 +106,7 @@ h1
 .wrapper
 	flexbox()
 	flex-flow: row wrap
-	width: 90%
+	width: 100%
 	margin: 0 auto
 	background white
 	box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5)
@@ -119,6 +119,7 @@ h1
 .header
 	background: white
 	padding: 5px 10px 0px 10px
+	position relative
 .footer
 	background: #323131
 	color: #A8A8A8
@@ -144,53 +145,47 @@ h1
 	cursor pointer
 //Header
 .header-logo
-	flex 2
-	flexbox()
-	align-content: center
-	align-items: center
+	flex 4
+	order 1
+	height 60px
 	font-size: 1.5em
+	flexbox()
+	align-items: center
+	justify-content: center
 .header-menu
-	flex 2
+	flex 1
+	order 2
+	flexbox()
+	flex-direction: row-reverse
 #navicon
 	font-size: xx-large
-	margin: 10px 0px 0px 0px
-	display: inline-block
-	vertical-align: middle
+	flexbox()
 	cursor pointer
-.logotipo
-	width 110px
-	transition: 0.2s
-	color black
+	align-items center
+	height 60px
 .menuprincipal
-	width: 200%
-	margin: 55px 0px 0px -25%
+	margin: 0
 	transition: height .5s ease-out
 	height 0
+	text-align center
 	ul
+		position absolute
+		left 0
+		right 0
+		top 65px
 		padding 0
 		li
+			display inline-block
 			a
-				padding 5px 0px 5px 0px
+				padding 15px 10px 15px 10px
 				display block
-.acceder
-	background-color: #ff4842
-	border: none
-	border-radius: .4em
-	box-sizing: border-box
-	color: #fff
-	cursor: pointer
-	display: inline-block
-	font-size: .95em
-	font-weight: 700
-	padding: .6em .8em .8em
-	text-decoration: none
-	transition: .2s
-	vertical-align: middle
-	box-shadow: inset 0 -.2em rgba(0,0,0,.3)
-	&:hover
-		background-color #7dcd40
+				font-size: 1.5em
+				border-bottom: 5px solid transparent
+				&:hover
+					background #E2E2E2
+					border-bottom: 5px solid #215EBB
 .efecto1
-	height 135px
+	height 125px
 	display block
 .efecto2
 	display block !important
@@ -207,56 +202,6 @@ h1
 	border-bottom: 3px dotted white
 	line-height: 20px
 	color: white
-#login
-	background-color: white
-	width: 230px
-	//height: 160px
-	position: absolute
-	border-radius: 5px
-	box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5)
-	right: 120px
-	z-index 5
-	padding: 10px
-	display none
-	//display none
-	&:before
-		content: ""
-		display: block
-		width: 0
-		height: 0
-		border-left: 10px solid transparent
-		border-right: 10px solid transparent
-		border-bottom: 10px solid #fff
-		margin: -20px 5% 0px 0px
-		float: right
-	label
-		float: left
-		text-align: left
-		margin: 10px
-	input
-		padding: 10px
-		width: 100%
-		outline: none
-		border: 1px solid #E2E2E2
-		font-size: 16px
-		color: #333
-		box-sizing: border-box
-	button
-		background  #7dcd40
-		border: none
-		border-radius: .4em
-		box-sizing: border-box
-		color: #fff
-		cursor: pointer
-		font-size: .95em
-		font-weight: 700
-		padding: .6em .8em .8em
-		text-decoration: none
-		transition: .2s
-		vertical-align: middle
-		box-shadow: inset 0 -.2em rgba(0,0,0,.3)
-		&:hover
-			background  #ff4842
 //Main
 .main,.aside
 	padding 0
@@ -416,15 +361,14 @@ h1
 //Foter
 footer
 	div
-		padding 10px
-		width 100%
-[class^="icon-"]
-	font-size xx-large
-	flexbox()
-	justify-content center
-	align-items center
-	margin 10px
-	//width 20%
+		flex 1
+	[class^="icon-"]
+		font-size xx-large
+		flexbox()
+		justify-content center
+		align-items center
+		margin 10px
+		//width 20%
 .footer-derecha
 	flexbox()
 	//justify-content space-around

@@ -21,9 +21,12 @@ $(document).ready(function(){ //cuando el DOM listo
     );
     $("#slider1").responsiveSlides({
         auto: true,
+        random: true,
         pager: false,
         nav: true,
-        speed: 100,
+        speed: 500,
+        timeout: 8000,
+        pause: true,
         namespace: "centered-btns"
     });
 });

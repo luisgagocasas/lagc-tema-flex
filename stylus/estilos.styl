@@ -87,6 +87,9 @@ body
 	color #515151
 	font-family: 'Quicksand', sans-serif
 	font-size 16px
+	display: flex
+	flex-wrap: wrap
+	min-height: 100vh
 *, *:after, *:before
     -moz-box-sizing border-box
     -webkit-box-sizing border-box
@@ -124,6 +127,7 @@ h1
 	background: #323131
 	color: #A8A8A8
 	align-items: center
+	align-self: flex-end
 .main
 	//background: deepskyblue
 .aside-1
@@ -361,28 +365,37 @@ h1
 //Foter
 footer
 	div
-		flex 1
+		width 100%
 	[class^="icon-"]
 		font-size xx-large
 		flexbox()
 		justify-content center
 		align-items center
 		margin 10px
+		color #515151
+		width: 30px
 		//width 20%
+		&:hover
+			background: white
+			border-radius: 10px
 .footer-derecha
 	flexbox()
 	//justify-content space-around
 	justify-content: center
 //iconos #2E4F82
 .icon-facebook
-	color #2E4F82
+	&:hover
+		color #2E4F82
 .icon-twitter
 	color #2AA9E0
 .icon-google
-	color #B33F30
+	&:hover
+		color #B33F30
 .icon-pinterest
-	color #E71211
+	&:hover
+		color #E71211
 .icon-youtube
-	color #C02C2F
+	&:hover
+		color #C02C2F
 
 @import 'media'

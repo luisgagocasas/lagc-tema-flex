@@ -83,7 +83,7 @@ user-select()
 	-ms-user-select arguments
 	user-select arguments
 body
-	background #3A74B5
+	background #3AB574 /*#3A74B5*/
 	color #515151
 	font-family: 'Quicksand', sans-serif
 	font-size 16px
@@ -120,16 +120,15 @@ h1
 	flexbox()
 	flex-flow: row wrap
 .header
-	background: white
+	background: #3A74B5 /*white*/
 	padding: 5px 10px 0px 10px
 	position relative
+	color white
 .footer
 	background: #323131
 	color: #A8A8A8
 	align-items: center
 	align-self: flex-end
-.main
-	//background: deepskyblue
 .aside-1
 	background #323131
 	color white
@@ -155,17 +154,21 @@ h1
 	font-size: 1.5em
 	flexbox()
 	align-items: center
-	justify-content: center
+	h1
+		font-size: 1.2em
+		padding: 0px 0px 5px 0px
+		font-weight: initial
 .header-menu
 	flex 1
 	order 2
 	flexbox()
 	flex-direction: row-reverse
 #navicon
-	font-size: xx-large
-	flexbox()
-	cursor pointer
 	align-items center
+	color white
+	cursor pointer
+	flexbox()
+	font-size: xx-large
 	height 60px
 .menuprincipal
 	margin: 0
@@ -185,9 +188,10 @@ h1
 				display block
 				font-size: 1.5em
 				border-bottom: 5px solid transparent
+				color white
 				&:hover
-					background #E2E2E2
-					border-bottom: 5px solid #215EBB
+					background #3AB574
+					border-bottom: 5px solid white
 .efecto1
 	height 125px
 	display block
@@ -209,19 +213,6 @@ h1
 //Main
 .main,.aside
 	padding 0
-#slider
-	overflow: hidden
-	figure
-		position: relative
-		width: 500%
-		margin: 0
-		left: 0
-		text-align: left
-		font-size: 0
-		animation: 30s slidy infinite
-		img
-			width: 20%
-			float: left
 .slider
 	width 100%
 	float left
@@ -373,7 +364,8 @@ footer
 		align-items center
 		margin 10px
 		color #515151
-		width: 30px
+		width: 31px
+		height 31px
 		//width 20%
 		&:hover
 			background: white
@@ -387,13 +379,14 @@ footer
 	&:hover
 		color #2E4F82
 .icon-twitter
-	color #2AA9E0
+	&:hover
+		color #2AA9E0
 .icon-google
 	&:hover
 		color #B33F30
-.icon-pinterest
+.icon-github
 	&:hover
-		color #E71211
+		color #333333
 .icon-youtube
 	&:hover
 		color #C02C2F

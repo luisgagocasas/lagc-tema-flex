@@ -1,0 +1,43 @@
+!!! 5
+html(lang="es")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
+		block titulo
+			title Luis Gago Casas
+		link(rel="shortcut icon" href="img/favicon.ico")
+		link(href="https://fontastic.s3.amazonaws.com/QnxK5FiuSUNtYRBmE6yKxL/icons.css", rel="stylesheet")
+		link(href="css/index.css", rel="stylesheet")
+	body
+		.wrapper
+			header.header
+				.header-logo
+					h1 Luis Gago Casas
+				.header-menu
+					nav.menuprincipal
+						ul
+							li
+								a(href=".") Yo
+							li
+								a(href="blog.html") Blog
+							li
+								a(href="cv.html") CV
+							li
+								a(href="contacto.html") Contacto
+					a(href="#", class="icon-navicon" id="navicon")
+			main.main
+				block contenido
+					p Hola mundo
+			footer.footer
+				.footer-izquierda.center
+					p Arequipa - Perú
+				.footer-centro.center
+					p E - mail: luisgago@lagc-peru.com
+				.footer-derecha
+					a(href="#" target="_blank" class="icon-facebook")
+					a(href="#" target="_blank" class="icon-google")
+					a(href="#" target="_blank" class="icon-github")
+					a(href="#" target="_blank" class="icon-twitter")
+					a(href="#" target="_blank" class="icon-youtube")
+		#fb-root
+	script(src="js/index.js")

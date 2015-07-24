@@ -1,9 +1,17 @@
 @media all and (max-width: 480px)
-	//movil
-	.wrapper
-		width 100%
-	.noticia
-		width 100%
+	.blog_articulo
+		.recomen
+			display inline-block !important
+@media all and (min-width: 700px)
+	.blog_articulo,.cv,.contacto
+		.img_resumen
+			position relative
+			width 100%
+			.cont
+				position: absolute
+				left: 0
+				right: 0
+				bottom: 4px
 @media all and (min-width: 1024px)
 	//web
 	.wrapper
@@ -52,6 +60,34 @@
 		padding: 10px
 	.noticia
 		width 25%
+	.blog //Lista de articulos
+		.noticia
+			width 25%
+			&:nth-child(1)
+				width: 50%
+				position relative
+				.cont
+					position: absolute
+					left: 0
+					right: 0
+					padding: 15px
+					bottom: 8px
+					margin: 0 auto
+					background-color: rgba(58, 181, 116, 0.9)
+					box-sizing: border-box
+					color: white
+	.blog_articulo
+		.conte
+			padding 5px
+			flexbox()
+			.descrip
+				flex 3
+			.recomen
+				flex 1
+				display inline-block !important
+				.noticias
+					position: relative
+					margin: 0px 0px 10px 0px
 	//Footer
 	footer
 		div

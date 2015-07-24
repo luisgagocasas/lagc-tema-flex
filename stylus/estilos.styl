@@ -119,6 +119,7 @@ h1
 .header,.footer,.section
 	flexbox()
 	flex-flow: row wrap
+	overflow: hidden
 .header
 	background: #3A74B5 /*white*/
 	padding: 5px 10px 0px 10px
@@ -305,7 +306,6 @@ h1
 			&.next
 				left auto
 				right 0
-
 		.large-btns_nav
 			z-index 3
 			position absolute
@@ -318,24 +318,18 @@ h1
 			left 0
 			background #000 url("../img/themes.gif") no-repeat left 50%
 			width 38px
-
 			&:active
 				opacity 1.0
-
 			&.next
 				left auto
 				background-position right 50%
 				right 0
-
 		&:hover
 			.centered-btns_nav, .large-btns_nav
 				opacity 0.5
 //Section - Noticias
 .section
 	padding: 0px 40px 0px 40px
-	h2
-		width 100%
-		margin 20px
 .noticia
 	width 50%
 	padding 5px
@@ -343,8 +337,11 @@ h1
 	box-sizing: border-box
 	flexbox()
 	flex-flow: row wrap
-	h3
-		font-size: 1em
+	align-content: flex-start
+	.titulo
+		font-size 1.5em
+	h1
+		font-size: 2em
 	figure,.cont
 		width 100%
 	figure
@@ -352,7 +349,75 @@ h1
 			width 100%
 	.cont
 		padding 1%
-
+//Contenido del articulo
+.blog_articulo
+	padding 0 !important
+	.datos,conte
+		padding 5px
+	.datos
+		width 100%
+		flexbox()
+		div
+			padding 5px
+		.icon-tag
+			a
+				margin 0px 3px 0px 3px
+				&:hover
+					border-bottom 2px solid #333
+	.conte
+		.recomen
+			flexbox()
+			.noticias
+				margin 1px
+	.noticia
+		width 100%
+		padding 0
+		.cont
+			background: rgba(58, 181, 116, 0.9)
+			box-sizing: border-box
+			color: white
+			padding: 15px
+		.conte
+			.cont
+				position: absolute
+				left: 0
+				right: 0
+				bottom: 4px
+	.recomen
+		flexbox()
+		.noticias
+			position: relative
+			margin: 0px 0px 10px 0px
+//CV
+.cv,.contacto
+	width 100%
+	padding 0 !important
+	.noticia
+		width 100%
+		padding 0
+		.cont
+			box-sizing: border-box
+			padding: 15px
+		.conte
+			.cont
+				position: absolute
+				left: 0
+				right: 0
+				bottom: 4px
+		.contenido
+			padding 5px
+			width 100%
+.cv
+	.noticia
+		.cont
+			background: rgba(181, 58, 86, 0.9)
+			color: white
+.contacto
+	.noticia
+		.cont
+			background: rgba(58, 167, 181, 0.9)
+			color: white
+//Contacto
 //Foter
 footer
 	div
@@ -364,8 +429,8 @@ footer
 		align-items center
 		margin 10px
 		color #515151
-		width: 31px
-		height 31px
+		width: 30px
+		height 30px
 		//width 20%
 		&:hover
 			background: white

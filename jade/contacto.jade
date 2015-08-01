@@ -12,10 +12,16 @@ block contenido
 						h2.titulo Lorem ipsum dolor sit amet,
 					p Lorem ipsum dolor sit amet,
 			.contenido
-				form(action="", class="contac")
-					label(for="nombres")
-						input(type="text")
-					label(for="correo")
-						input(type="mail")
-					label(for="telefono")
-						input(type="tel")
+				.formulario
+					form(action="", class="contac")
+						label(for="nombres") Nombres y Apellidos
+							input(type="text")
+						label(for="correo") Correo
+							input(type="mail")
+						label(for="telefono") Telefono
+							input(type="tel")
+						label(for="descripcion") Descripción
+							textarea(name="", rows="6", class="textarea")
+						button(type="submit", class="enviar") Enviar
+				.descripcion
+					| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error maxime sequi adipisci magni alias dolorum corporis quo est, vitae aliquid?

@@ -87,13 +87,10 @@ body
 	color #515151
 	font-family: 'Quicksand', sans-serif
 	font-size 16px
-	display: flex
-	flex-wrap: wrap
-	min-height: 100vh
 *, *:after, *:before
-    -moz-box-sizing border-box
-    -webkit-box-sizing border-box
-    box-sizing border-box
+	-moz-box-sizing border-box
+	-webkit-box-sizing border-box
+	box-sizing border-box
 	margin 0
 a
 	color #000
@@ -113,6 +110,7 @@ h1
 	margin: 0 auto
 	background white
 	box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5)
+	min-height: 100vh
 .wrapper > *
 	padding: 10px
 	flex: 1 100%
@@ -125,14 +123,12 @@ h1
 	padding: 5px 10px 0px 10px
 	position relative
 	color white
+	align-self: flex-start
 .footer
 	background: #323131
 	color: #A8A8A8
 	align-items: center
 	align-self: flex-end
-.aside-1
-	background #323131
-	color white
 //Comunes
 .center
 	text-align center
@@ -212,7 +208,7 @@ h1
 	line-height: 20px
 	color: white
 //Main
-.main,.aside
+.main
 	padding 0
 .slider
 	width 100%
@@ -412,12 +408,27 @@ h1
 		.cont
 			background: rgba(181, 58, 86, 0.9)
 			color: white
+//Contacto
 .contacto
 	.noticia
 		.cont
 			background: rgba(58, 167, 181, 0.9)
 			color: white
-//Contacto
+	.contac
+		input,textarea
+			width: 100%
+			outline: 0
+			padding: 10px
+			font-size: 1em
+			border-radius: 3px
+			border: 1px solid #999
+	.enviar
+		margin 10px auto 0px auto
+		font-size 1em
+		padding 10px 20px 10px 20px
+		flexbox()
+		border-radius 5px
+		border 0
 //Foter
 footer
 	div
